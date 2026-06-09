@@ -1,0 +1,1258 @@
+<!doctype html>
+<html lang="is">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hjarta Hafnarfjarðar 2026 - Vaktin í dag</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;overflow:hidden}.screen{width:1920px;height:1080px;position:fixed;inset:0;transform-origin:top left;padding:8px;display:grid;grid-template-rows:60px 1fr 20px;gap:8px;background:radial-gradient(circle at 80% 0,rgba(255,0,0,.18),transparent 28%),linear-gradient(135deg,#020617,#111827 55%,#000);overflow:hidden}header,footer,.panel,.roleBox,.station,.program{border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.40)}header{border-radius:13px;display:flex;align-items:center;justify-content:space-between;padding:5px 12px}.date{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.68);font-weight:900}h1{margin:0;font-size:25px;line-height:1;white-space:nowrap}.headerRight{display:flex;align-items:center;gap:12px;text-align:right;font-size:11px;color:rgba(255,255,255,.75);font-weight:800}.logoBox{width:138px;height:42px;border-radius:9px;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;color:#111827;font-weight:900;overflow:hidden}.logoBox img{width:100%;height:100%;object-fit:contain}.layout{min-height:0;overflow:hidden;display:grid;grid-template-columns:.95fr 1.25fr;grid-template-rows:104px 1fr 250px 112px;gap:8px;grid-template-areas:"top top" "bar doors" "cleaning doors" "others program"}.topRoles{grid-area:top;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;overflow:hidden}.bar{grid-area:bar}.doors{grid-area:doors}.cleaning{grid-area:cleaning}.others{grid-area:others}.program{grid-area:program}.roleBox,.panel,.program{border-radius:13px;padding:6px;overflow:hidden;min-height:0}.roleTitle{font-size:10px;letter-spacing:.08em;color:rgba(255,255,255,.72);font-weight:900;text-transform:uppercase;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sectionHead{height:22px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.14);margin-bottom:5px;padding-bottom:4px}.sectionHead h2{margin:0;font-size:15px;line-height:1;text-transform:uppercase}.count{border-radius:999px;background:rgba(255,255,255,.14);padding:1px 7px;font-size:11px;font-weight:900}.stations{height:calc(100% - 27px);display:grid;gap:6px;overflow:hidden}.bar .stations{grid-template-columns:.85fr 1.75fr .95fr;grid-template-rows:1.35fr .75fr;grid-template-areas:"skur bjorgamur hjartabar" "mathiesen bjorgamur bogabar"}.bar .station[data-key=SKUR]{grid-area:skur}.bar .station[data-key=BJORGAMUR]{grid-area:bjorgamur}.bar .station[data-key=HJARTABARINN]{grid-area:hjartabar}.bar .station[data-key=NYIBAR]{grid-area:hjartabar}.bar .station[data-key=MATHIESEN]{grid-area:mathiesen}.bar .station[data-key=BOGABAR]{grid-area:bogabar}.doors .stations{grid-template-columns:.85fr 2.15fr}.doors .station[data-key=GAESLAINNI]{grid-column:1}.doors .station[data-key=GAESLAUTI]{grid-column:2}.cleaning .stations{grid-template-columns:repeat(3,1fr)}.others .sectionHead{display:none}.others .stations{height:100%;grid-template-columns:repeat(5,1fr)}.others .card{height:52px;min-height:52px;max-height:52px}.others .avatar{width:38px;height:38px}.others .name{font-size:9px}.others .meta{font-size:7.5px}.station{min-height:0;overflow:hidden;border-radius:10px;background:rgba(255,255,255,.075);padding:5px}.stationHead{height:18px;display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,.25);border-radius:7px;padding:0 6px;margin-bottom:4px;font-size:10px;font-weight:900;text-transform:uppercase;white-space:nowrap;overflow:hidden}.cards{height:calc(100% - 22px);display:grid;gap:4px;align-content:start;overflow:hidden}.cards.one{grid-template-columns:1fr}.cards.two{grid-template-columns:repeat(2,1fr)}.cards.three{grid-template-columns:repeat(3,1fr)}.card{height:56px;min-height:56px;max-height:56px;border-radius:8px;padding:5px;display:grid;grid-template-columns:42px minmax(0,1fr);gap:7px;color:#111827;overflow:hidden;align-items:center;background:#d1d5db}.roleBox .card{height:58px;min-height:58px;max-height:58px;grid-template-columns:46px 1fr}.roleBox .avatar{width:46px;height:46px}.roleBox .name{font-size:12px}.roleBox .meta{font-size:9px}.avatar{width:42px;height:42px;border-radius:7px;background:#d1d5db;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0}.avatar img{width:100%;height:100%;object-fit:cover;display:block}.avatar svg{width:100%;height:100%;display:block}.name{font-size:10px;line-height:1.02;font-weight:900;overflow-wrap:anywhere;max-height:21px;overflow:hidden}.meta{font-size:8px;line-height:1.05;font-weight:800;color:rgba(17,24,39,.80);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.programGrid{height:calc(100% - 27px);display:grid;grid-template-columns:repeat(3,1fr);grid-auto-flow:row;grid-auto-rows:minmax(0,1fr);gap:6px;overflow:hidden}.programItem{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.10);border-radius:9px;padding:6px;overflow:hidden}.programArea{font-size:10px;color:rgba(255,255,255,.7);text-transform:uppercase;font-weight:900}.programName{font-size:15px;font-weight:900}footer{border-radius:8px;padding:2px 10px;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:rgba(255,255,255,.72);font-weight:800;overflow:hidden}.error{grid-column:1/-1;border:1px solid rgba(255,80,80,.5);background:rgba(160,0,0,.35);border-radius:13px;padding:20px;font-size:24px;font-weight:900}
+
+.screen.logoOnly{display:flex;align-items:center;justify-content:center;padding:0}
+.screen.logoOnly header,.screen.logoOnly footer{display:none}
+.screen.logoOnly .layout{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.emptyLogo{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.emptyLogo img{max-width:62%;max-height:62%;object-fit:contain}
+.emptyLogo .logoText{font-size:72px;font-weight:900;color:rgba(255,255,255,.9)}
+
+
+.emptyLogo{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:34px;
+}
+.emptyLogo img{
+  max-width:62%;
+  max-height:58%;
+  object-fit:contain;
+}
+.emptyLogo .logoText{
+  font-size:72px;
+  font-weight:900;
+  color:rgba(255,255,255,.9);
+}
+.emptyDayClock{
+  font-size:46px;
+  font-weight:900;
+  color:white;
+  text-shadow:0 2px 18px rgba(0,0,0,.75);
+}
+
+
+/* No-data skjár: bakgrunnur + stórt logo + dagur/klukka */
+.screen.logoOnly{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0;
+}
+.screen.logoOnly header,
+.screen.logoOnly footer{
+  display:none;
+}
+.screen.logoOnly .layout{
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.emptyLogo{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:34px;
+}
+.emptyLogo img{
+  max-width:70%;
+  max-height:62%;
+  object-fit:contain;
+}
+.emptyDayClock{
+  font-size:46px;
+  font-weight:900;
+  color:white;
+  text-shadow:0 2px 18px rgba(0,0,0,.85);
+}
+
+
+/* Bar layout fínstilling:
+   Mathiesen og Bogabar eru minni þar sem þau eru max 2.
+   Skúr er mjór, því eru spjöld þar í einum dálki svo texti klippist síður. */
+.bar .station[data-key="SKUR"] .cards,
+.bar .station[data-key=SKUR] .cards,
+.bar .station[data-key="MATHIESEN"] .cards,
+.bar .station[data-key=MATHIESEN] .cards,
+.bar .station[data-key="BOGABAR"] .cards,
+.bar .station[data-key=BOGABAR] .cards{
+  grid-template-columns:1fr !important;
+}
+
+
+/* Bjórgámur á alltaf að vera 2 dálkar, ekki 3 */
+.bar .station[data-key="BJORGAMUR"] .cards,
+.bar .station[data-key=BJORGAMUR] .cards,
+.bar .station[data-key="BJÓRGÁMUR"] .cards,
+.bar .station[data-key="BJÓRGAMUR"] .cards {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+
+/* Gæsla inni á alltaf að vera einn dálkur */
+.doors .station[data-key="GAESLAINNI"] .cards,
+.doors .station[data-key=GAESLAINNI] .cards {
+  grid-template-columns: 1fr !important;
+}
+
+/* Veðurspá undir dyravörðum og fyrir ofan dagskrá */
+.weather {display:none}
+.weatherBox {
+  height: calc(100% - 27px);
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 6px;
+  overflow: hidden;
+}
+.weatherNow,
+.weatherHours {
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 9px;
+  padding: 6px 8px;
+  overflow: hidden;
+}
+.weatherTemp {
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 900;
+}
+.weatherMeta {
+  margin-top: 3px;
+  font-size: 10px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: rgba(255,255,255,.78);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.weatherHourly {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  height: 100%;
+}
+.weatherHour {
+  background: rgba(0,0,0,.18);
+  border-radius: 7px;
+  padding: 5px;
+  overflow: hidden;
+}
+.weatherHourTime {
+  font-size: 9px;
+  font-weight: 900;
+  color: rgba(255,255,255,.70);
+}
+.weatherHourTemp {
+  font-size: 14px;
+  font-weight: 900;
+}
+.weatherHourRain {
+  font-size: 9px;
+  font-weight: 800;
+  color: rgba(255,255,255,.70);
+}
+
+
+/* Veður er inni í Dyraverðir-panel, ekki í vinstri dálki */
+.doors{
+  display:grid;
+  grid-template-rows:22px minmax(0,1fr) 76px;
+  gap:6px;
+}
+.doors .sectionHead{
+  margin-bottom:0;
+}
+.doors .stations{
+  height:auto !important;
+  min-height:0;
+}
+.doorsWeather{
+  min-height:0;
+  overflow:hidden;
+}
+.doorsWeather .stationHead{
+  margin-bottom:4px;
+}
+.doorsWeather .weatherBox{
+  height:calc(100% - 22px);
+}
+
+
+/* Myndrænni veðurspá */
+.weatherNow {
+  position: relative;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+  gap: 10px;
+  transition: background .25s ease, border-color .25s ease;
+}
+.weatherNowIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  background: rgba(255,255,255,.14);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.10);
+}
+.weatherNowBody {
+  min-width: 0;
+}
+.weatherDesc {
+  font-size: 12px;
+  line-height: 1.1;
+  font-weight: 900;
+  margin-top: 2px;
+}
+.weatherTheme-clear {
+  background: linear-gradient(135deg, rgba(245,158,11,.30), rgba(249,115,22,.18));
+  border-color: rgba(251,191,36,.30);
+}
+.weatherTheme-partly {
+  background: linear-gradient(135deg, rgba(59,130,246,.26), rgba(250,204,21,.15));
+  border-color: rgba(96,165,250,.28);
+}
+.weatherTheme-cloudy {
+  background: linear-gradient(135deg, rgba(100,116,139,.30), rgba(71,85,105,.18));
+  border-color: rgba(148,163,184,.25);
+}
+.weatherTheme-rain {
+  background: linear-gradient(135deg, rgba(37,99,235,.30), rgba(6,182,212,.16));
+  border-color: rgba(56,189,248,.28);
+}
+.weatherTheme-storm {
+  background: linear-gradient(135deg, rgba(124,58,237,.30), rgba(239,68,68,.16));
+  border-color: rgba(196,181,253,.24);
+}
+.weatherTheme-fog {
+  background: linear-gradient(135deg, rgba(148,163,184,.28), rgba(203,213,225,.12));
+  border-color: rgba(226,232,240,.18);
+}
+.weatherTheme-snow {
+  background: linear-gradient(135deg, rgba(186,230,253,.25), rgba(255,255,255,.12));
+  border-color: rgba(191,219,254,.22);
+}
+.weatherHour {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  gap: 2px;
+}
+.weatherHourIcon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+
+/* Minnka aðal veðurtáknið svo það fari ekki út fyrir kassann */
+.weatherNow {
+  grid-template-columns: 44px 1fr !important;
+  gap: 8px !important;
+}
+.weatherNowIcon {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+  border-radius: 10px !important;
+  font-size: 24px !important;
+  line-height: 1 !important;
+  overflow: hidden !important;
+}
+.weatherTemp {
+  font-size: 24px !important;
+  line-height: .95 !important;
+}
+.weatherDesc {
+  font-size: 10px !important;
+  line-height: 1 !important;
+}
+.weatherMeta {
+  font-size: 9px !important;
+  line-height: 1.05 !important;
+}
+
+
+/* Veður v18: texti til hliðar við tákn + betri smáspá */
+.weatherNow {
+  grid-template-columns: 46px minmax(0,1fr) !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 5px 8px !important;
+}
+.weatherNowIcon {
+  width: 46px !important;
+  height: 46px !important;
+  font-size: 24px !important;
+}
+.weatherNowBody {
+  display: grid !important;
+  grid-template-columns: auto 1fr !important;
+  grid-template-rows: auto auto !important;
+  column-gap: 10px !important;
+  row-gap: 1px !important;
+  align-items: end !important;
+  min-width: 0 !important;
+}
+.weatherTemp {
+  grid-row: 1 / span 2 !important;
+  font-size: 26px !important;
+  line-height: .9 !important;
+  align-self: center !important;
+  white-space: nowrap !important;
+}
+.weatherDesc {
+  font-size: 11px !important;
+  line-height: 1 !important;
+  align-self: end !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.weatherMeta {
+  font-size: 9px !important;
+  line-height: 1 !important;
+  align-self: start !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.weatherHour {
+  padding: 4px 6px !important;
+}
+.weatherHourTime {
+  font-size: 8.5px !important;
+}
+.weatherHourIcon {
+  font-size: 13px !important;
+}
+.weatherHourTemp {
+  font-size: 12px !important;
+  line-height: 1 !important;
+}
+.weatherHourRain,
+.weatherHourWind {
+  font-size: 8px !important;
+  line-height: 1.05 !important;
+  color: rgba(255,255,255,.72) !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+
+/* Veður v19: allur texti til hliðar við tákn + vindur í m/s */
+.weatherNowBody {
+  grid-template-columns: auto minmax(0,1fr) !important;
+}
+.weatherMeta {
+  white-space: nowrap !important;
+}
+.weatherHourly {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+.weatherHour {
+  display: grid !important;
+  grid-template-columns: 22px minmax(0,1fr) !important;
+  grid-template-rows: auto auto auto !important;
+  column-gap: 6px !important;
+  row-gap: 1px !important;
+  align-items: center !important;
+  padding: 4px 6px !important;
+}
+.weatherHourIcon {
+  grid-row: 1 / span 3 !important;
+  grid-column: 1 !important;
+  font-size: 15px !important;
+  line-height: 1 !important;
+  align-self: center !important;
+  text-align: center !important;
+}
+.weatherHourTime,
+.weatherHourTemp,
+.weatherHourRain,
+.weatherHourWind {
+  grid-column: 2 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.weatherHourTime {
+  font-size: 8.5px !important;
+  line-height: 1 !important;
+}
+.weatherHourTemp {
+  font-size: 12px !important;
+  line-height: 1 !important;
+}
+.weatherHourRain,
+.weatherHourWind {
+  font-size: 7.8px !important;
+  line-height: 1 !important;
+}
+
+
+/* Veður v20: hitastig + vindur/rigning í sömu línu hægra megin */
+.weatherHour {
+  display: grid !important;
+  grid-template-columns: 22px 34px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  column-gap: 6px !important;
+  row-gap: 1px !important;
+  align-items: center !important;
+}
+.weatherHourIcon {
+  grid-column: 1 !important;
+  grid-row: 1 / span 2 !important;
+  align-self: center !important;
+}
+.weatherHourTime {
+  grid-column: 2 / span 2 !important;
+  grid-row: 1 !important;
+}
+.weatherHourTemp {
+  grid-column: 2 !important;
+  grid-row: 2 !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+}
+.weatherHourRain,
+.weatherHourWind {
+  grid-column: 3 !important;
+  grid-row: 2 !important;
+  font-size: 7.5px !important;
+  line-height: 1 !important;
+}
+.weatherHourWind {
+  transform: translateY(8px);
+}
+.weatherHourRain {
+  transform: translateY(-2px);
+}
+
+
+/* Veður v21: laga hourly tákn, vindspá og m/s */
+.weatherHourly {
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 6px !important;
+}
+.weatherHour {
+  display: grid !important;
+  grid-template-columns: 18px 28px minmax(0,1fr) !important;
+  grid-template-rows: auto auto !important;
+  column-gap: 6px !important;
+  row-gap: 2px !important;
+  align-items: center !important;
+  padding: 4px 6px !important;
+  overflow: hidden !important;
+}
+.weatherHourIcon {
+  grid-column: 1 !important;
+  grid-row: 1 / span 2 !important;
+  display: block !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  width: 18px !important;
+  text-align: center !important;
+  align-self: center !important;
+}
+.weatherHourTime {
+  grid-column: 2 / span 2 !important;
+  grid-row: 1 !important;
+  font-size: 8.5px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+.weatherHourTemp {
+  grid-column: 2 !important;
+  grid-row: 2 !important;
+  font-size: 12px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+.weatherHourMetaLine {
+  grid-column: 3 !important;
+  grid-row: 2 !important;
+  font-size: 7.5px !important;
+  line-height: 1 !important;
+  color: rgba(255,255,255,.74) !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.weatherHourRain,
+.weatherHourWind {
+  display: none !important;
+}
+
+
+/* Veður v22: 2 línur í klst-spá - vindur efst, rigning neðst */
+.weatherHour {
+  display: grid !important;
+  grid-template-columns: 18px 28px minmax(0,1fr) !important;
+  grid-template-rows: auto auto auto !important;
+  column-gap: 6px !important;
+  row-gap: 1px !important;
+  align-items: center !important;
+  padding: 4px 6px !important;
+  overflow: hidden !important;
+}
+.weatherHourIcon {
+  grid-column: 1 !important;
+  grid-row: 1 / span 3 !important;
+  display: block !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  width: 18px !important;
+  text-align: center !important;
+  align-self: center !important;
+}
+.weatherHourTime {
+  grid-column: 2 / span 2 !important;
+  grid-row: 1 !important;
+  font-size: 8.5px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+.weatherHourTemp {
+  grid-column: 2 !important;
+  grid-row: 2 / span 2 !important;
+  align-self: start !important;
+  font-size: 12px !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+.weatherHourWindLine,
+.weatherHourRainLine {
+  grid-column: 3 !important;
+  font-size: 7.5px !important;
+  line-height: 1 !important;
+  color: rgba(255,255,255,.74) !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+.weatherHourWindLine {
+  grid-row: 2 !important;
+}
+.weatherHourRainLine {
+  grid-row: 3 !important;
+}
+.weatherHourMetaLine,
+.weatherHourRain,
+.weatherHourWind {
+  display: none !important;
+}
+
+
+/* FINAL dagskrá: alltaf ein lína, ekki 2 raðir */
+.programGrid {
+  height: calc(100% - 27px) !important;
+  display: grid !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: minmax(0, 1fr) !important;
+  grid-template-rows: 1fr !important;
+  grid-template-columns: none !important;
+  gap: 6px !important;
+  overflow: hidden !important;
+}
+.programItem {
+  min-width: 0 !important;
+  padding: 6px !important;
+}
+.programArea {
+  font-size: 10px !important;
+  line-height: 1.05 !important;
+}
+.programName {
+  font-size: 15px !important;
+  line-height: 1.08 !important;
+  overflow-wrap: anywhere !important;
+}
+
+/* FINAL veður: ekki sýna háværa villu ef veður API svarar ekki */
+.weatherUnavailable {
+  opacity: .72;
+}
+
+
+
+/* FINAL v26 - Dagskrá max 4 atriði á dag + Hjarta Barinn */
+.programGrid {
+  height: calc(100% - 27px) !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  grid-auto-flow: row !important;
+  grid-auto-rows: minmax(0, 1fr) !important;
+  gap: 6px !important;
+  overflow: hidden !important;
+}
+.programItem {
+  min-width: 0 !important;
+  padding: 6px !important;
+}
+.programArea {
+  font-size: 10px !important;
+  line-height: 1.05 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+.programName {
+  font-size: 15px !important;
+  line-height: 1.08 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+/* Hjarta Barinn / Nýi Barinn eiga ekki að þjappast í 2 dálka */
+.bar .station[data-key="HJARTABARINN"] .cards,
+.bar .station[data-key=HJARTABARINN] .cards,
+.bar .station[data-key="NYIBAR"] .cards,
+.bar .station[data-key=NYIBAR] .cards {
+  grid-template-columns: 1fr !important;
+}
+
+
+/* FINAL v27 - Stækka manneskju við smell */
+.personClickable {
+  cursor: pointer;
+}
+.personClickable:hover {
+  outline: 3px solid rgba(255,255,255,.55);
+  transform: translateY(-1px);
+}
+.personPopupOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.personPopupOverlay.show {
+  display: flex;
+}
+.personPopupBackdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.72);
+  backdrop-filter: blur(4px);
+}
+.personPopupCard {
+  position: relative;
+  width: 980px;
+  min-height: 520px;
+  max-height: 760px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(15,23,42,.98), rgba(0,0,0,.96));
+  border: 2px solid rgba(255,255,255,.18);
+  box-shadow: 0 28px 90px rgba(0,0,0,.65);
+  color: white;
+  padding: 34px;
+  display: grid;
+  grid-template-columns: 360px minmax(0,1fr);
+  gap: 34px;
+  overflow: hidden;
+}
+.personPopupClose {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255,255,255,.16);
+  color: white;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.personPopupPhoto {
+  width: 360px;
+  height: 450px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: rgba(255,255,255,.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.personPopupPhoto img,
+.personPopupPhoto svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.personPopupInfo {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.personPopupName {
+  font-size: 58px;
+  line-height: .98;
+  font-weight: 900;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+.personPopupRole {
+  font-size: 28px;
+  line-height: 1.1;
+  color: rgba(255,255,255,.74);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  overflow-wrap: anywhere;
+}
+.personPopupGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.personPopupGrid div {
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 16px;
+  padding: 16px;
+  min-width: 0;
+}
+.personPopupGrid span {
+  display: block;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.58);
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.personPopupGrid strong {
+  display: block;
+  font-size: 26px;
+  line-height: 1.05;
+  font-weight: 900;
+  overflow-wrap: anywhere;
+}
+
+
+/* FINAL v28 - Stærri person-popup + upplýsingar raðast niður */
+.personPopupCard {
+  width: 1180px !important;
+  min-height: 650px !important;
+  max-height: 900px !important;
+  grid-template-columns: 430px minmax(0,1fr) !important;
+  gap: 44px !important;
+  padding: 42px !important;
+}
+.personPopupPhoto {
+  width: 430px !important;
+  height: 560px !important;
+  border-radius: 28px !important;
+}
+.personPopupName {
+  font-size: 64px !important;
+  line-height: .96 !important;
+  margin-bottom: 10px !important;
+}
+.personPopupNick {
+  font-size: 28px !important;
+  line-height: 1.05 !important;
+  color: rgba(255,255,255,.78) !important;
+  font-weight: 800 !important;
+  margin-bottom: 28px !important;
+}
+.personPopupNick strong {
+  color: white !important;
+  font-weight: 900 !important;
+}
+.personPopupRole,
+.personPopupGrid {
+  display: none !important;
+}
+.personPopupList {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 12px !important;
+}
+.personPopupLine {
+  background: rgba(255,255,255,.10) !important;
+  border: 1px solid rgba(255,255,255,.10) !important;
+  border-radius: 17px !important;
+  padding: 16px 18px !important;
+  min-width: 0 !important;
+}
+.personPopupLine span {
+  display: block !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+  color: rgba(255,255,255,.58) !important;
+  font-weight: 900 !important;
+  margin-bottom: 8px !important;
+}
+.personPopupLine strong {
+  display: block !important;
+  font-size: 30px !important;
+  line-height: 1.05 !important;
+  font-weight: 900 !important;
+  overflow-wrap: anywhere !important;
+}
+
+</style>
+</head><body>
+<div class="screen">
+<header><div><div class="date" id="dateLine">Sæki gögn...</div><h1 id="title">Hjarta Hafnarfjarðar 2026 - Vaktin í dag</h1></div><div class="headerRight"><div><div>Síðast uppfært: <span id="updated">—</span></div><div>Samtals: <span id="total">—</span></div></div><div class="logoBox" id="logoBox">LOGO</div></div></header>
+<main class="layout" id="layout"><div class="error">Sæki gögn úr Google Sheet...</div></main>
+<footer><span>Live Sheet Preview · 16:9 · 1920×1080</span><span id="apiStatus">API</span></footer>
+</div>
+<script>
+const CONFIG = {
+  API_BASE: "https://script.google.com/macros/s/AKfycby1-C_kBka4AtsVXRCW0JR4f4dxm2KMjCapR32u2mn17w_A5mDITW01RzUD3Zz97C-7/exec",
+  SHEET: "auto",
+  DAY: "25. júní",
+  REFRESH_MS: 60000,
+  SCREEN_TITLE: "Hjarta Hafnarfjarðar 2026 - Vaktin í dag"
+};
+
+function buildApiUrl() {
+  const params = new URLSearchParams({
+    sheet: CONFIG.SHEET,
+    day: CONFIG.DAY
+  });
+  return `${CONFIG.API_BASE}?${params.toString()}`;
+}
+function fit(){const s=document.querySelector('.screen'),w=1920,h=1080,z=Math.min(innerWidth/w,innerHeight/h);s.style.transform=`translate(${(innerWidth-w*z)/2}px,${(innerHeight-h*z)/2}px) scale(${z})`}addEventListener('resize',fit);addEventListener('load',fit);
+function norm(v){return String(v||'').toUpperCase().replace(/Á/g,'A').replace(/É/g,'E').replace(/Í/g,'I').replace(/Ó/g,'O').replace(/Ú/g,'U').replace(/Ý/g,'Y').replace(/Þ/g,'TH').replace(/Æ/g,'AE').replace(/Ö/g,'O').replace(/Ð/g,'D').trim()}
+function esc(v){return String(v||'').replace(/[&<>"]/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[s]))}function attr(v){return esc(v).replace(/'/g,'&#039;')}
+function initials(n){return String(n||'?').split(' ').filter(Boolean).map(x=>x[0]).join('').slice(0,2).toUpperCase()}
+function stationKey(v){return norm(v).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^A-Z0-9]/g,'')}
+function avatar(n){const l=initials(n),h=[...String(n||'')].reduce((s,c)=>s+c.charCodeAt(0),0)%360;return `<svg viewBox="0 0 100 100"><rect width="100" height="100" fill="hsl(${h},62%,76%)"/><circle cx="50" cy="34" r="19" fill="rgba(17,24,39,.78)"/><path d="M18 96c4-28 22-42 32-42s28 14 32 42" fill="rgba(17,24,39,.78)"/><text x="50" y="90" text-anchor="middle" font-family="Arial" font-size="18" font-weight="900" fill="white">${l}</text></svg>`}
+window.demoAvatarFallback=avatar;
+function avatarHtml(p){return p.photo&&/^https?:\/\//i.test(p.photo)?`<img src="${attr(p.photo)}" onerror="this.parentElement.innerHTML=window.demoAvatarFallback('${attr(p.name)}')">`:avatar(p.name)}
+function txt(hex){if(!hex||!/^#[0-9a-f]{6}$/i.test(hex))return'#111827';const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);return((r*299+g*587+b*114)/1000)>150?'#111827':'#fff'}
+function color(c){const x=String(c||'').trim().toLowerCase();return(!x||x==='#ffffff'||x==='white')?'#d1d5db':c}
+function card(p){
+  const c=color(p.color),fg=txt(c),start=p.start?`⏱ ${esc(p.start)}`:'',meal=p.meal?`🍽 ${esc(p.meal)}`:'',station=p.station?`📍 ${esc(p.station)}`:'';
+  const popupId = registerPersonPopup_(p);
+  return `<article class="card personClickable" style="background:${c};color:${fg}" onclick="openPersonPopup(${popupId})">
+    <div class="avatar">${avatarHtml(p)}</div>
+    <div>
+      <div class="name">${esc(p.name)}</div>
+      ${start?`<div class="meta">${start}</div>`:''}
+      ${meal?`<div class="meta">${meal}</div>`:''}
+      ${station?`<div class="meta">${station}</div>`:''}
+    </div>
+  </article>`
+}
+function groupBy(a,k){
+  const m=new Map();
+  a.forEach(i=>{
+    const x=i[k]||'ANNAÐ';
+    if(!m.has(x))m.set(x,[]);
+    m.get(x).push(i);
+  });
+
+  return [...m.entries()].map(([station,people])=>({
+    station,
+    people:people.sort((a,b)=>norm(a.name).localeCompare(norm(b.name),'is'))
+  }));
+}
+function sortGroups(g,o){return g.sort((a,b)=>(o.indexOf(a.station)<0?999:o.indexOf(a.station))-(o.indexOf(b.station)<0?999:o.indexOf(b.station))||a.station.localeCompare(b.station,'is'))}
+function stationBlock(g){let cls='one';if(g.people.length>=10)cls='three';else if(g.people.length>=4)cls='two';return `<section class="station" data-key="${stationKey(g.station)}"><div class="stationHead"><span>${esc(g.station)}</span><span>${g.people.length}</span></div><div class="cards ${cls}">${g.people.map(card).join('')}</div></section>`}
+function section(t,c,g){const n=g.reduce((s,x)=>s+x.people.length,0);return `<section class="panel ${c}"><div class="sectionHead"><h2>${esc(t)}</h2><span class="count">${n}</span></div><div class="stations">${g.map(stationBlock).join('')}</div></section>`}
+
+function doorsSection(g){
+  const n=g.reduce((s,x)=>s+x.people.length,0);
+  return `<section class="panel doors">
+    <div class="sectionHead"><h2>DYRAVERÐIR</h2><span class="count">${n}</span></div>
+    <div class="stations">${g.map(stationBlock).join('')}</div>
+    ${weatherInline()}
+  </section>`;
+}
+
+function topRolesSection(a){return `<section class="topRoles">${a.map(p=>`<div class="roleBox"><div class="roleTitle">${esc(p.role||p.station||'')}</div>${card(p)}</div>`).join('')}</section>`}
+function programSection(p){return `<section class="program"><div class="sectionHead"><h2>DAGSKRÁ DAGSINS</h2><span class="count">${p.length}</span></div><div class="programGrid">${p.map(x=>`<article class="programItem"><div class="programArea">${esc(x.area)}</div><div class="programName">${esc(x.title)}</div></article>`).join('')}</div></section>`}
+
+const WEATHER_CONFIG = {
+  name: "Hafnarfjörður",
+  latitude: 64.0671,
+  longitude: -21.9384
+};
+
+function weatherText(code) {
+  const map = {
+    0: "Heiðskírt",
+    1: "Léttskýjað",
+    2: "Hálfskýjað",
+    3: "Skýjað",
+    45: "Þoka",
+    48: "Þoka",
+    51: "Úði",
+    53: "Úði",
+    55: "Úði",
+    61: "Rigning",
+    63: "Rigning",
+    65: "Mikil rigning",
+    71: "Snjókoma",
+    73: "Snjókoma",
+    75: "Mikil snjókoma",
+    80: "Skúrir",
+    81: "Skúrir",
+    82: "Miklar skúrir",
+    95: "Þrumuveður"
+  };
+  return map[code] || "Veður";
+}
+
+
+function weatherIcon(code) {
+  if (code === 0) return "☀️";
+  if (code === 1 || code === 2) return "🌤️";
+  if (code === 3) return "☁️";
+  if (code === 45 || code === 48) return "🌫️";
+  if ([51,53,55,61,63,65,80,81,82].includes(code)) return "🌧️";
+  if ([71,73,75,77,85,86].includes(code)) return "❄️";
+  if ([95,96,99].includes(code)) return "⛈️";
+  return "🌦️";
+}
+
+function weatherTheme(code) {
+  if (code === 0) return "weatherTheme-clear";
+  if (code === 1 || code === 2) return "weatherTheme-partly";
+  if (code === 3) return "weatherTheme-cloudy";
+  if (code === 45 || code === 48) return "weatherTheme-fog";
+  if ([51,53,55,61,63,65,80,81,82].includes(code)) return "weatherTheme-rain";
+  if ([71,73,75,77,85,86].includes(code)) return "weatherTheme-snow";
+  if ([95,96,99].includes(code)) return "weatherTheme-storm";
+  return "weatherTheme-partly";
+}
+
+function weatherInline() {
+  return `<div class="doorsWeather">
+    <div class="stationHead"><span>VEÐURSPÁ</span><span>${esc(WEATHER_CONFIG.name)}</span></div>
+    <div class="weatherBox" id="weatherBox">
+      <div class="weatherNow weatherTheme-partly">
+        <div class="weatherNowIcon">🌤️</div>
+        <div class="weatherNowBody"><div class="weatherTemp">Sæki...</div><div class="weatherDesc">Veðurspá</div><div class="weatherMeta">Veðurspá fyrir svæðið</div></div>
+      </div>
+      <div class="weatherHours"></div>
+    </div>
+  </div>`;
+}
+
+
+function fetchWithTimeout(url, ms) {
+  return Promise.race([
+    fetch(url, { cache: "no-store" }),
+    new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), ms))
+  ]);
+}
+
+function loadWeather() {
+  const box = document.getElementById("weatherBox");
+  if (!box) return;
+
+  const fallbackHtml = `<div class="weatherNow weatherTheme-cloudy weatherUnavailable">
+    <div class="weatherNowIcon">🌦️</div>
+    <div class="weatherNowBody">
+      <div class="weatherTemp">—</div>
+      <div class="weatherDesc">Veður</div>
+      <div class="weatherMeta">spá ekki tiltæk núna</div>
+    </div>
+  </div>
+  <div class="weatherHours">
+    <div class="weatherHourly">
+      <div class="weatherHour">
+        <div class="weatherHourIcon">—</div>
+        <div class="weatherHourTime">—</div>
+        <div class="weatherHourTemp">—</div>
+        <div class="weatherHourWindLine">vindur —</div>
+        <div class="weatherHourRainLine">rigning —</div>
+      </div>
+    </div>
+  </div>`;
+
+  let finished = false;
+
+  const failSafe = setTimeout(() => {
+    if (finished) return;
+    finished = true;
+    box.innerHTML = fallbackHtml;
+  }, 8000);
+
+  try {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${WEATHER_CONFIG.latitude}&longitude=${WEATHER_CONFIG.longitude}&current=temperature_2m,wind_speed_10m,precipitation,weather_code&hourly=temperature_2m,precipitation_probability,weather_code,wind_speed_10m&forecast_days=1&timezone=auto`;
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.timeout = 8000;
+
+    xhr.onload = function () {
+      if (finished) return;
+      finished = true;
+      clearTimeout(failSafe);
+
+      try {
+        if (xhr.status < 200 || xhr.status >= 300) {
+          box.innerHTML = fallbackHtml;
+          return;
+        }
+
+        const w = JSON.parse(xhr.responseText);
+
+        const temp = Math.round((w.current && w.current.temperature_2m) || 0);
+        const wind = Math.round(((w.current && w.current.wind_speed_10m) || 0) / 3.6);
+        const rain = (w.current && w.current.precipitation) || 0;
+        const code = w.current && w.current.weather_code;
+        const desc = weatherText(code);
+
+        const hourly = w.hourly || {};
+        const times = hourly.time || [];
+        const temps = hourly.temperature_2m || [];
+        const probs = hourly.precipitation_probability || [];
+        const winds = hourly.wind_speed_10m || [];
+        const codes = hourly.weather_code || [];
+
+        const now = new Date();
+        let start = -1;
+
+        for (let i = 0; i < times.length; i++) {
+          if (new Date(times[i]) >= now) {
+            start = i;
+            break;
+          }
+        }
+
+        if (start < 0) start = 0;
+
+        const hours = [0, 2, 4, 6].map(offset => start + offset).filter(i => i < times.length);
+
+        box.innerHTML = `
+          <div class="weatherNow ${weatherTheme(code)}">
+            <div class="weatherNowIcon">${weatherIcon(code)}</div>
+            <div class="weatherNowBody">
+              <div class="weatherTemp">${temp}°C</div>
+              <div class="weatherDesc">${esc(desc)}</div>
+              <div class="weatherMeta">vindur ${wind} m/s · úrkoma ${rain} mm</div>
+            </div>
+          </div>
+          <div class="weatherHours">
+            <div class="weatherHourly">
+              ${hours.map(i => {
+                const d = new Date(times[i]);
+                const hh = d.toLocaleTimeString("is-IS", { hour: "2-digit", minute: "2-digit" });
+                return `<div class="weatherHour">
+                  <div class="weatherHourTime">${hh}</div>
+                  <div class="weatherHourIcon">${weatherIcon(codes[i])}</div>
+                  <div class="weatherHourTemp">${Math.round(temps[i])}°</div>
+                  <div class="weatherHourWindLine">vindur ${Math.round((winds[i] || 0) / 3.6)} m/s</div>
+                  <div class="weatherHourRainLine">${probs[i] || 0}% rigning</div>
+                </div>`;
+              }).join("")}
+            </div>
+          </div>`;
+      } catch (e) {
+        box.innerHTML = fallbackHtml;
+      }
+    };
+
+    xhr.onerror = function () {
+      if (finished) return;
+      finished = true;
+      clearTimeout(failSafe);
+      box.innerHTML = fallbackHtml;
+    };
+
+    xhr.ontimeout = function () {
+      if (finished) return;
+      finished = true;
+      clearTimeout(failSafe);
+      box.innerHTML = fallbackHtml;
+    };
+
+    xhr.send();
+  } catch (e) {
+    if (!finished) {
+      finished = true;
+      clearTimeout(failSafe);
+      box.innerHTML = fallbackHtml;
+    }
+  }
+}
+
+
+function registerPersonPopup_(p) {
+  window.__PERSON_POPUP_DATA = window.__PERSON_POPUP_DATA || [];
+  const id = window.__PERSON_POPUP_DATA.length;
+  window.__PERSON_POPUP_DATA.push(Object.assign({}, p));
+  return id;
+}
+
+function personPopupAvatar_(p) {
+  if (p && p.photo && /^https?:\/\//i.test(p.photo)) {
+    return `<img src="${attr(p.photo)}" onerror="this.parentElement.innerHTML=window.demoAvatarFallback('${attr(p.name)}')">`;
+  }
+  return avatar(p ? p.name : "");
+}
+
+function openPersonPopup(id) {
+  const p = (window.__PERSON_POPUP_DATA || [])[id];
+  if (!p) return;
+
+  let overlay = document.getElementById("personPopupOverlay");
+  if (!overlay) {
+    overlay = document.createElement("div");
+    overlay.id = "personPopupOverlay";
+    overlay.className = "personPopupOverlay";
+    overlay.innerHTML = `<div class="personPopupBackdrop" onclick="closePersonPopup()"></div><div class="personPopupCard" id="personPopupCard"></div>`;
+    document.body.appendChild(overlay);
+  }
+
+  const cardEl = document.getElementById("personPopupCard");
+  const displayName = p.fullName || p.name || "";
+  const nickname = p.nickname || ((p.fullName && p.name && norm(p.fullName) !== norm(p.name)) ? p.name : "");
+  const station = p.station || p.subgroup || "";
+  const start = p.start || "";
+  const meal = p.meal || "";
+
+  cardEl.innerHTML = `
+    <button class="personPopupClose" onclick="closePersonPopup()">×</button>
+    <div class="personPopupPhoto">${personPopupAvatar_(p)}</div>
+    <div class="personPopupInfo">
+      <div class="personPopupName">${esc(displayName)}</div>
+      ${nickname ? `<div class="personPopupNick">Gælunafn: <strong>${esc(nickname)}</strong></div>` : ""}
+      <div class="personPopupList">
+        ${station ? `<div class="personPopupLine"><span>Staður / svæði</span><strong>${esc(station)}</strong></div>` : ""}
+        ${start ? `<div class="personPopupLine"><span>Mæting</span><strong>${esc(start)}</strong></div>` : ""}
+        ${meal ? `<div class="personPopupLine"><span>Matur</span><strong>${esc(meal)}</strong></div>` : ""}
+        ${p.department ? `<div class="personPopupLine"><span>Deild</span><strong>${esc(p.department)}</strong></div>` : ""}
+      </div>
+    </div>`;
+
+  overlay.classList.add("show");
+}
+
+function closePersonPopup() {
+  const overlay = document.getElementById("personPopupOverlay");
+  if (overlay) overlay.classList.remove("show");
+}
+
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") closePersonPopup();
+});
+
+function build(data){window.__PERSON_POPUP_DATA=[];const people=data.people||[],allTop=data.topRoles||[],program=data.program||[],lead=['SVÆÐISSTJÓRI','VAKTSTJÓRI','YFIRDYRAVÖRÐUR','TÆKNISTJÓRI'];const top=lead.map(r=>allTop.find(x=>norm(x.role)===norm(r)&&x.name)).filter(Boolean);const extra=allTop.filter(x=>!top.includes(x)&&x.name).map(x=>({...x,department:'AÐRIR',subgroup:x.role||'AÐRIR',station:x.role||x.station||'AÐRIR'}));const all=[...people,...extra];const bar=sortGroups(groupBy(all.filter(p=>p.department==='BARÞJÓNAR'),'subgroup'),['SKÚR','BJÓRGÁMUR','HJARTA BARINN','NÝI BAR','MATHIESEN','BOGABAR','ANNAÐ']);const cleaning=sortGroups(groupBy(all.filter(p=>p.department==='HREINSUNARDEILD'),'subgroup'),['ÞRIF #1','ÞRIF #2','ÞRIF #3','ÞRIF']);const doors=sortGroups(groupBy(all.filter(p=>p.department==='DYRAVERÐIR'),'subgroup'),['GÆSLA INNI','GÆSLA ÚTI','HLIÐ 1','HLIÐ 2','DYRAVERÐIR']);const others=sortGroups(groupBy(all.filter(p=>!['BARÞJÓNAR','HREINSUNARDEILD','DYRAVERÐIR'].includes(p.department)),'subgroup'),['TÆKNIMAÐUR INNI','TÆKNIMAÐUR ÚTI','HLJÓÐMAÐUR INNI','HLJÓÐMAÐUR ÚTI','LJÓSAMAÐUR INNI','LJÓSAMAÐUR ÚTI','LJÓSAMAÐUR','SVIÐSMAÐUR ÚTI','SVIÐSMAÐUR','HLJÓÐ / SVIÐ','RAFMAGN','ANNAÐ']);document.getElementById('layout').innerHTML=[topRolesSection(top),section('BARÞJÓNAR','bar',bar),doorsSection(doors),section('HREINSUNARDEILD','cleaning',cleaning),section('', 'others', others),programSection(program)].join('')}
+
+let CURRENT_DAY_LABEL = "";
+
+function formatDayLabel(day) {
+  const value = String(day || "").trim();
+  const n = value.toUpperCase();
+
+  if (!value || n === "AUTO" || n === "TODAY" || n === "Í DAG" || n === "I DAG") {
+    const now = new Date();
+    const months = [
+      "janúar",
+      "febrúar",
+      "mars",
+      "apríl",
+      "maí",
+      "júní",
+      "júlí",
+      "ágúst",
+      "september",
+      "október",
+      "nóvember",
+      "desember"
+    ];
+    return `${now.getDate()}. ${months[now.getMonth()]}`;
+  }
+
+  return value.toLowerCase();
+}
+
+function updateHeaderClock() {
+  const time = new Date().toLocaleTimeString("is-IS", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit"
+  });
+
+  const dayText = CURRENT_DAY_LABEL || CONFIG.DAY || "";
+  const titleEl = document.getElementById("title");
+  if (titleEl) {
+    titleEl.textContent = `${CONFIG.SCREEN_TITLE} - Í dag er: ${formatDayLabel(dayText)} - ${time}`;
+  }
+
+  const emptyDayEl = document.getElementById("emptyDayClock");
+  if (emptyDayEl) {
+    emptyDayEl.textContent = `Í dag er: ${formatDayLabel(dayText)} - ${time}`;
+  }
+}
+
+function hasNoUsableData(data) {
+  const warnings = data?.debug?.warnings || [];
+  const dayMissing = warnings.some(w => String(w).toLowerCase().includes("dagahaus"));
+  const total = (data?.counts?.people || 0) + (data?.counts?.topRoles || 0) + (data?.counts?.program || 0);
+  return dayMissing || total === 0;
+}
+
+
+function applyScreenBackground(backgroundUrl) {
+  if (backgroundUrl) {
+    document.querySelector(".screen").style.background =
+      `linear-gradient(135deg,rgba(2,6,23,.55),rgba(0,0,0,.42)),url(${backgroundUrl}) center/cover`;
+  }
+}
+
+function showLogoOnly(logoUrl) {
+  const screen = document.querySelector(".screen");
+  screen.classList.add("logoOnly");
+  const safeLogo = logoUrl ? `<img src="${attr(logoUrl)}">` : `<div class="logoText">LOGO</div>`;
+  document.getElementById("layout").innerHTML =
+    `<div class="emptyLogo">${safeLogo}<div id="emptyDayClock" class="emptyDayClock"></div></div>`;
+  updateHeaderClock();
+}
+
+async function load(){try{document.getElementById('apiStatus').textContent='Sæki gögn...';const res=await fetch(buildApiUrl(),{cache:'no-store'}),data=await res.json();if(!data.ok)throw new Error(data.error||'API villa');
+
+    CURRENT_DAY_LABEL = data.day || CONFIG.DAY;
+    applyScreenBackground(data.info?.backgroundImage || '');
+
+    if(hasNoUsableData(data)){
+      showLogoOnly(data.info?.emptyLogo || data.info?.logo || '');
+      return;
+    }
+
+    document.querySelector('.screen').classList.remove('logoOnly');
+    CURRENT_DAY_LABEL=data.day||CONFIG.DAY;
+    updateHeaderClock();updateHeaderClock();document.getElementById('dateLine').textContent=`${data.day} · ${data.sheet}`;document.getElementById('total').textContent=data.counts?.totalCards??'—';document.getElementById('updated').textContent=new Date(data.generatedAt).toLocaleTimeString('is-IS',{hour:'2-digit',minute:'2-digit'});document.getElementById('apiStatus').textContent=`Live gögn · fólk ${data.counts?.people??0} · titlar ${data.counts?.topRoles??0} · dagskrá ${data.counts?.program??0}`;if(data.info?.logo)document.getElementById('logoBox').innerHTML=`<img src="${attr(data.info.logo)}">`;if(data.info?.backgroundImage)document.querySelector('.screen').style.background=`linear-gradient(135deg,rgba(2,6,23,.88),rgba(0,0,0,.78)),url(${data.info.backgroundImage}) center/cover`;build(data);loadWeather()}catch(e){document.getElementById('layout').innerHTML=`<div class="error">Villa við að sækja gögn: ${esc(e.message||e)}</div>`;document.getElementById('apiStatus').textContent='Villa'}}
+CURRENT_DAY_LABEL=CONFIG.DAY;updateHeaderClock();fit();load();setInterval(load,CONFIG.REFRESH_MS);setInterval(updateHeaderClock,1000);setInterval(loadWeather,1800000);
+</script></body></html>
